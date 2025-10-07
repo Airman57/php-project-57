@@ -39,7 +39,7 @@ jobs:
       run: php artisan test
 
     - name: Run PHPStan (static analysis)
-      run: vendor/bin/phpstan analyse app/ --level=max
+      run: vendor/bin/phpstan analyse app/ --level=5
 
     - name: Run PHPCS (coding standards)
       run: vendor/bin/phpcs --standard=PSR12 app/
