@@ -23,11 +23,11 @@ jobs:
     - name: Install Composer dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
 
-    - name: Composer autoload
-      run: composer dump-autoload
-
     - name: Copy .env
       run: cp .env.example .env
+
+    - name: Composer autoload
+      run: composer dump-autoload
 
     - name: Generate app key
       run: php artisan key:generate
@@ -39,7 +39,7 @@ jobs:
       run: php artisan test
 
     - name: Run PHPStan (static analysis)
-      run: vendor/bin/phpstan analyse
+      run: vendor/bin/phpstan analyse app/ --level=max
 
     - name: Run PHPCS (coding standards)
       run: vendor/bin/phpcs --standard=PSR12 app/
