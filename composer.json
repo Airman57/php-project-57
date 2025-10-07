@@ -1,0 +1,15 @@
+{
+    "name": "hexlet/code",
+    "type": "prooject",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexandr Konishchev"
+        }
+    ],
+    "require": {}
+}
