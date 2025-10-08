@@ -1,6 +1,10 @@
 <<<<<<< HEAD
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Airman57/php-project-57/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Airman57/php-project-57/actions)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Airman57_php-project-57&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Airman57_php-project-57)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Airman57_php-project-57&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Airman57_php-project-57)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Airman57_php-project-57&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Airman57_php-project-57)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Airman57_php-project-57&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Airman57_php-project-57)
 =======
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
