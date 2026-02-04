@@ -19,6 +19,8 @@ WORKDIR /app
 
 COPY . .
 
+ENV NODE_ENV=production
+
 RUN composer install --no-dev --optimize-autoloader
 RUN npm ci
 RUN npm run build
