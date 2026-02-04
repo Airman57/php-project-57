@@ -27,5 +27,4 @@ RUN touch database/database.sqlite
 
 RUN chmod -R 775 storage bootstrap/cache
 
-CMD ["bash", "-c", "php artisan key:generate --force && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT"]
-
+CMD ["bash", "-c", "php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT"]
