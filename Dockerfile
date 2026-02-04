@@ -22,7 +22,7 @@ COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
 
-RUN npm ci
+RUN npm ci --include=dev
 
 RUN npm run build
 
