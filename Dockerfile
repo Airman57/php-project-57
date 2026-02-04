@@ -22,6 +22,9 @@ COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
 
+ENV NODE_ENV=production
+ENV VITE_URL=https://php-project-57-1cvf.onrender.com
+
 RUN npm ci --include=dev
 
 RUN npm run build
