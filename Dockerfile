@@ -1,3 +1,4 @@
+
 FROM php:8.3-cli
 
 RUN apt-get update && apt-get install -y \
@@ -19,10 +20,10 @@ WORKDIR /app
 
 COPY . .
 
-ENV NODE_ENV=production
-
 RUN composer install --no-dev --optimize-autoloader
+
 RUN npm ci
+
 RUN npm run build
 
 RUN touch database/database.sqlite
