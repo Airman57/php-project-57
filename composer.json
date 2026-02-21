@@ -23,7 +23,8 @@
         "laravel/sail": "^1.46",
         "laravel/tinker": "^2.10",
         "phpunit/phpunit": "^12.4",
-        "squizlabs/php_codesniffer": "*"
+        "squizlabs/php_codesniffer": "*",
+        "laravel/breeze": "^2.3"
     },
     "require": {
         "laravel/framework": "^12.0",
