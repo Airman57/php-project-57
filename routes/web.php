@@ -1,7 +1,10 @@
 <?php
 
+use App\Mail\TestMail;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -15,6 +18,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+// отправка тестого письма, потом удалить
+Route::get('/send-test-mail', function () {
+    Mail::to('any@example.com')->send(new TestMail());
+    return 'Письмо отправлено, смотри storage/logs/laravel.log';
 });
 
 require __DIR__.'/auth.php';
