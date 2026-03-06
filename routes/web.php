@@ -20,6 +20,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::resource('task_statuses', TaskStatusController::class);
+
 // отправка тестого письма, потом удалить
 Route::get('/send-test-mail', function () {
     Mail::to('any@example.com')->send(new TestMail());
