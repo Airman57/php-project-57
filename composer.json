@@ -3,7 +3,9 @@
     "type": "prooject",
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
         }
     },
     "autoload-dev": {
@@ -24,11 +26,14 @@
         "laravel/tinker": "^2.10",
         "phpunit/phpunit": "^12.4",
         "squizlabs/php_codesniffer": "*",
-        "laravel/breeze": "^2.3"
+        "laravel/breeze": "^2.3",
+        "fakerphp/faker": "^1.24",
+        "mockery/mockery": "^1.6"
     },
     "require": {
         "laravel/framework": "^12.0",
         "sentry/sentry-laravel": "^4.16",
-        "laracasts/flash": "^3.2"
+        "laracasts/flash": "^3.2",
+        "spatie/laravel-html": "^3.13"
     }
 }
